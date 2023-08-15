@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+</head>
+    <body>
+        <div class="main-container">
+            <div class="navigation">
+                <div class="logo">
+                    <img src="./images/Glowing1.png" alt="">
+                </div>
+                <div class="navlink" id="navlink">
+                    <li onclick="LoginForm()">Login</li>
+                    <span></span>
+                    <li class="distributor">Become a Distributor</li>
+                </div>
+                <div class="menu-bar" onclick="showNavlink()">
+                    <ion-icon name="menu" role="img" class="md hydrated"></ion-icon>
+                </div>
+            </div>
+
+            <!-- banner -->
+            <div class="banner">
+                <img src="./images/banner.webp" alt="">
+                <div class="overlay">
+                    <h1>Japan's Exquisite Skincare Secret</h1>
+                    <span>Explore more</span>
+                </div>
+            </div>
+
+
+            <!-- product -->
+            <div class="product-cont">
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="sticker">
+                            <small>Recommended</small>
+                        </div>
+                        <img src="./images/product1.webp" alt="">
+                    </div>
+                    <div class="product-details">
+                        <small>Jul 23 2023</small>
+                        <label>Japanese Skin Care &amp; Facial Products</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eligendi aperiam ex omnis qui voluptatem eaque. </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="sticker">
+                            <small>Recommended</small>
+                        </div>
+                        <img src="./images/1.png" alt="">
+                    </div>
+                    <div class="product-details">
+                        <small>Jul 23 2023</small>
+                        <label>Japanese Skin Care &amp; Facial Products</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eligendi aperiam ex omnis qui voluptatem eaque. </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="sticker">
+                            <small>Recommended</small>
+                        </div>
+                        <img src="./images/2.png" alt="">
+                    </div>
+                    <div class="product-details">
+                        <small>Jul 23 2023</small>
+                        <label>Japanese Skin Care &amp; Facial Products</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eligendi aperiam ex omnis qui voluptatem eaque. </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="sticker">
+                            <small>Recommended</small>
+                        </div>
+                        <img src="./images/3.png" alt="">
+                    </div>
+                    <div class="product-details">
+                        <small>Jul 23 2023</small>
+                        <label>Japanese Skin Care &amp; Facial Products</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eligendi aperiam ex omnis qui voluptatem eaque. </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="sticker">
+                            <small>Recommended</small>
+                        </div>
+                        <img src="./images/4.png" alt="">
+                    </div>
+                    <div class="product-details">
+                        <small>Jul 23 2023</small>
+                        <label>Japanese Skin Care &amp; Facial Products</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eligendi aperiam ex omnis qui voluptatem eaque. </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="sticker">
+                            <small>Recommended</small>
+                        </div>
+                        <img src="./images/5.png" alt="">
+                    </div>
+                    <div class="product-details">
+                        <small>Jul 23 2023</small>
+                        <label>Japanese Skin Care &amp; Facial Products</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eligendi aperiam ex omnis qui voluptatem eaque. </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- login -->
+            <div class ="login-popup" id="show-login">
+                <form>
+                    <div class="login-form" id="form">
+                        <span class="close-btn" onclick="closeForm()">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </span>
+                        <label>Login</label>
+                        <div class="input-from">
+                            <div class="inputbox">
+                                <span>Username *</span>
+                                <input  type="email"/>
+                            </div>
+                            <div class="inputbox">
+                                <span>Password *</span>
+                                <input type="password" />
+                            </div>
+                        </div>
+                        <button>Login</button>
+                        <div class="Forgot_password">Forgot password?</div>
+                    </div>
+                </form>
+            </div>
+            <!-- login end -->
+
+
+            <!-- footer -->
+            <div class="Footer-container">
+                <div class="load-more">
+                    <span>Load More</span>
+                </div>
+                <div class="join-team">
+                    <label for="">Become a member</label>
+                    <span>Join Now</span>
+                </div>
+                <div class="address-social">
+                    <div class="email-address">
+                        <div class="logo">
+                            <img src="./images/Glowing1.png" alt="">
+                        </div>
+                        <small>info@glowingb.com.ph</small>
+                    </div>
+                    <div class="address">
+                        <small>123 Sakura Street, </small>
+                        <small>Tokyo, Japan</small>
+                        <div class="social">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reserved">
+                    <small>© Copyright 2023 | All Rights Reserved | GlowingB.com.ph</small>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <script src="./js/login.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

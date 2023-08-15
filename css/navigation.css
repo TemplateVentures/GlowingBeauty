@@ -1,0 +1,127 @@
+.navigation{
+    max-width: 1140px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, 0%);
+    z-index: 999;
+    padding: 0 30px;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    /* background: pink; */
+}
+.logo img{
+    width: 100%;
+}
+
+.navlink{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+}
+.navlink li{
+    list-style: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+}
+.navlink span{
+    width: 1px;
+    height: 25px;
+    background: rgb(104, 102, 102);
+    margin: 0 20px;
+}
+.menu-bar{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.menu-bar ion-icon{
+    font-size: 35px;
+    color: #686666;
+
+}
+
+/* .mencont{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 110px;
+    right: 0;
+    background: pink;
+    z-index: 999;
+} */
+
+
+@media (max-width:521px){
+    .logo{
+        width: 120px;
+        transition: 0.6s;
+    }
+    .navlink{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        padding:0 30px;
+        padding-top: 150px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .show-navlink-cont{
+        opacity: 1;
+        visibility: visible;
+        right: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .navlink li{
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #72882E;
+        color: #fff;
+        font-size: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .navlink span{
+        display: none;
+    }
+    .navlink .distributor{
+        background: #fff;
+        border: 2px solid #72882E;
+        color: #72882E;
+        transition: 0.3s;
+    }
+    .navlink .distributor:hover{
+        background: #72882E;
+        color: #fff;
+    }
+    .menu-bar{
+        display: flex;
+    }
+    .logo{
+        z-index: 999;
+    }
+}
+
